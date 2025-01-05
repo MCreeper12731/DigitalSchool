@@ -79,6 +79,7 @@ grozdje: 1.7
 jagode: 3.1
 ```
 *primer sprehoda po ključih in vrednostih hkrati - za veliko primerov najenostavnejši način*
+
 ## Naloge
 ### 1. Naloga - Ustvarjanje slovarja
 Ustvarite nov **slovar**, ki vsebuje **5 izdelkov** iz trgovine in si za njih izmislite **cene**. Slovar še izpišite
@@ -174,4 +175,105 @@ Vnesi novo ceno: 5
 Izdelek: borovnice, trenutna cena: 1.7
 Vnesi novo ceno: 8
 {'ananas': 1, 'banana': 2, 'grozdje': 3, 'jagode': 5, 'borovnice': 8}
+```
+
+## Rešitve
+### 1. Naloga
+```python
+izdelki = {
+	"ananas": 2.5,
+	"banana": 1.1,
+	"grozdje": 1.7,
+	"jagode": 3.1,
+	"borovnice": 1.7
+}
+```
+
+### 2. Naloga
+```python
+izdelek = input("Vnesi nov izdelek: ")
+cena = input("Vnesi ceno: ")
+
+izdelki[izdelek] = cena
+print(izdelki)
+```
+
+### 2. Naloga - Dodatna
+```python
+stevilo_izdelkov = int(input("Koliko novih izdelkov? "))
+for i in range(stevilo_izdelkov):
+    ime = input("Vnesi nov izdelek: ")
+    izdelki[ime] = float(input("Vnesi ceno: "))
+
+print(izdelki)
+```
+
+### 3. Naloga
+```python
+mejna_cena = float(input("Vnesi ceno: "))
+
+print(f"Izdelki dražji od {mejna_cena} evrov:")
+for izdelek, cena in izdelki.items():
+    if (cena > mejna_cena):
+        print(izdelek)
+```
+
+### 3. Naloga - Dodatna
+```python
+most_expensive = []
+for izdelek, cena in izdelki.items():
+    if (len(most_expensive) == 0):
+        most_expensive.append(izdelek) # Ce je seznam prazen, dodamo element
+    elif cena > izdelki[most_expensive[0]]:
+        most_expensive = [izdelek] # Ce je trenutna cena višja, seznam prepišemo s trenutnim izdelkom
+    elif cena == izdelki[most_expensive[0]]:
+        most_expensive.append(izdelek) # Ce je trenutna cena enaka, izdelek dodamo
+
+print(most_expensive)
+```
+
+### 4. Naloga
+```python
+stevilo_izdelkov = int(input("Število izdelkov: "))
+skupna_vsota = 0
+for i in range(stevilo_izdelkov):
+    izdelek = input("Vnesi izdelek: ")
+    if izdelek in izdelki:
+        skupna_vsota += izdelki[izdelek]
+        
+print(skupna_vsota)
+```
+
+### 4. Naloga - Dodatna
+```python
+stevilo_izdelkov = int(input("Število izdelkov: "))
+skupna_vsota = 0
+for i in range(stevilo_izdelkov):
+    izdelek = input("Vnesi izdelek: ")
+    kolicina = int(input("Vnesi kolicino: "))
+    if izdelek in izdelki:
+        skupna_vsota += izdelki[izdelek] * kolicina
+        
+print(skupna_vsota)
+```
+
+### 5. Naloga
+```python
+podrazitev = float(input("Vnesi podražitev: "))
+for izdelek, cena in izdelki.items():
+    izdelki[izdelek] = cena + podrazitev
+    
+print(izdelki)
+```
+
+### 5. Naloga - Dodatna
+```python
+for izdelek, cena in izdelki.items():
+    print(f"Izdelek: {izdelek}, trenutna cena: {cena}")
+    nova_cena = input("Vnesi novo ceno: ")
+    if (nova_cena != ""):
+        nova_cena = int(nova_cena)
+        izdelki[izdelek] = nova_cena
+
+print(izdelki)
 ```
