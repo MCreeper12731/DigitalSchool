@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="scripts/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<title>Main Page</title>
+</head>
+<body>
+
+	
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded p-2">
+		  	
+		  	<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+		  		<span class="navbar-toggler-icon"></span>
+		  	</button>
+
+		    <ul class="navbar-nav collapse navbar-collapse" id="navbarNav">
+		      	<li class="nav-item">
+		        	<a class="nav-link active" href="./index.html">Home</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="https://sl.wikipedia.org/wiki/Ma%C4%8Dke" target="_blank">Wikipedija</a>
+		      	</li>
+		      	<li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">
+		          		Pasme
+		        	</a>
+		        	<ul class="dropdown-menu">
+		          		<li>
+		          			<a class="dropdown-item" href="./siberian-cat.html">Sibirska mačka</a>
+		          		</li>
+		          		<li>
+		          			<a class="dropdown-item" href="./maine-coon.html">Maine Coon</a>
+		          		</li>
+		        	</ul>
+		     	</li>
+		     	<li class="nav-item">
+		     		<a class="nav-link" href="./feedback.html">Feedback</a>
+		     	</li>
+	    	</ul>
+	    	<button class="btn btn-secondary" onclick="spremeni_temo()">Zamenjaj temo</button>
+		</nav>
+
+		<div class="row mt-5 mx-0">
+
+			<h1 class="col-12 bg-dark text-white rounded p-2 text-center">Mačke</h1>
+
+			<div id="body" class="col-lg-8 col-md-12 bg-dark text-white rounded p-4 mb-2">
+
+				<p>Domača mačka je nastala z udomačitvijo divje mačke pred 5000 leti. Male mačke, med katere spadajo domače mačke, za razliko od velikih mačk ne morejo rjoveti, a lahko mijavkajo in predejo.</p>
+
+				<p>Ena od značilnosti mačk je, da nikoli ne padejo na hrbet. To je zato, ker se lahko v zraku zasučejo s hrbta na trebuh v manj kot v dveh sekundah (1,6 s). K temu ogromno pripomore zelo razvit vestibularni aparat (čutilo za ravnotežje), ki bi ga po učinkovitosti lahko primerjali z giroskopom. Poleg tega razkorači noge, da s tem zveča zračni upor, zgradba njene hrbtenice, ki deluje kot vzmet, pa poskrbi, da je padec čim bolj ublažen. Tako so najpogostejše poškodbe, kadar do njih sploh pride, poškodbe spodnjega dela telesa in nog. Zanimivo pa je, da se mačke redkeje poškodujejo pri večjih višinah, saj imajo tako dovolj časa, da se odzovejo.</p>
+		    </div>
+		    <div class="col-lg-4 col-md-12 mb-2 ps-0 ps-lg-2 pe-0">
+		    	<img class="rounded mx-auto" style="width: 100%; display: block;" src="images/norwegian_forest_cat.jpg" alt="Norwegian forest cat">
+		    </div>
+		</div>
+	</div>
+
+</body>
+</html>
