@@ -103,18 +103,18 @@ test() # 10
 ## Naloge
 V tem sklopu nalog bomo zgradili komponente popularne igre s kartami - enka (UNO).
 ### 1. Naloga - Ustvarjanje kompleta kart
-Preden lahko karkoli počnemo, potrebujemo komplet kart. Napišite funkcijo, ki vrne **seznam vseh barvnih kart s številkami** (izločimo črne in posebne karte - `rdeca 2` je v kompletu vključena, karta `+4` pa ne). To bo naš komplet kart.<br>**Primer**
+Preden lahko karkoli počnemo, potrebujemo komplet kart. Karte bomo predstavili s seznamom `string`ov, kjer je karta oblike '[barva] [številka]' (izločimo črne in posebne karte - `rdeca 2` je v kompletu vključena, karta `+4` pa ne). To bo naš komplet kart.<br>**Primer**
 ```python
-komplet_kart = ustvari_komplet()
+komplet_kart = ...
 print(komplet_kart)
 ```
 ```lua
 ['zelena 0', 'zelena 1', 'zelena 2', 'zelena 3', 'zelena 4', 'zelena 5', 'zelena 6', 'modra 0', 'modra 1', 'modra 2', 'modra 3', 'modra 4', 'modra 5', 'modra 6', 'rdeca 0', 'rdeca 1', 'rdeca 2', 'rdeca 3', 'rdeca 4', 'rdeca 5', 'rdeca 6', 'rumena 0', 'rumena 1', 'rumena 2', 'rumena 3', 'rumena 4', 'rumena 5', 'rumena 6']
 ```
 ### 2. Naloga - Mešanje kart
-Brez mešanja kart bi vsaka igra potekala enako. Napišite funkcijo, ki kot paramater prejme **komplet kart** in vrne **premešan komplet**. *Namig:* `random.shuffle(seznam)` *naključno zamenja vrstni red elementov v seznamu.*<br>**Primer**
+Brez mešanja kart bi vsaka igra potekala enako. Komplet kart, ki smo ga ustvarili, premešajte. *Namig:* `random.shuffle(seznam)` *naključno zamenja vrstni red elementov v seznamu.*<br>**Primer**
 ```python
-komplet_kart = premesaj(komplet_kart)
+komplet_kart = ...
 print(komplet_kart)
 ```
 ```lua
@@ -185,24 +185,21 @@ print(poteze2)
 ### 1. Naloga
 - Z eksplicitno definicijo
 ```python
-def ustvari_komplet():
-	return ['zelena 0', 'zelena 1', 'zelena 2', 'zelena 3', 'zelena 4', 'zelena 5', 'zelena 6', 'modra 0', 'modra 1', 'modra 2', 'modra 3', 'modra 4', 'modra 5', 'modra 6', 'rdeca 0', 'rdeca 1', 'rdeca 2', 'rdeca 3', 'rdeca 4', 'rdeca 5', 'rdeca 6', 'rumena 0', 'rumena 1', 'rumena 2', 'rumena 3', 'rumena 4', 'rumena 5', 'rumena 6']
+komplet_kart = ['zelena 0', 'zelena 1', 'zelena 2', 'zelena 3', 'zelena 4', 'zelena 5', 'zelena 6', 'modra 0', 'modra 1', 'modra 2', 'modra 3', 'modra 4', 'modra 5', 'modra 6', 'rdeca 0', 'rdeca 1', 'rdeca 2', 'rdeca 3', 'rdeca 4', 'rdeca 5', 'rdeca 6', 'rumena 0', 'rumena 1', 'rumena 2', 'rumena 3', 'rumena 4', 'rumena 5', 'rumena 6']
 ```
 - Z uporabo zank
 ```python
-def ustvari_komplet():
-    komplet = []
-    for barva in ["zelena", "modra", "rdeca", "rumena"]:
-        for stevilka in range(0, 7):
-            komplet.append(barva + " " + str(stevilka))
-    return komplet
+komplet_kart = []
+for barva in ["zelena", "modra", "rdeca", "rumena"]:
+    for stevilka in range(0, 7):
+	komplet_kart.append(barva + " " + str(stevilka))
+
 ```
 *Opomba: predstavitev kart je lahko poljubna, na primer 'zelena' lahko nadomestimo s črko 'z': `z 5` ali `z5`. Pomembno je le, da je vsaka barva predstavljena z drugo besedo*
 
 ### 2. Naloga
 ```python
-def premesaj(komplet):
-    random.shuffle(komplet)
+random.shuffle(komplet_kart)
 ```
 
 ### 3. Naloga
