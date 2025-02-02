@@ -1,0 +1,14 @@
+h1 {
+	text-align: center;
+}
+
+p {
+	width: 75%;
+	padding: 50px 20px 0px 70px;
+	margin: 50px auto 50px auto;
+	border: 10px solid #00804e;
+	outline: 10px solid #00004e;
+	background-color: #40408e;
+	color: white;
+	font-size: 20px;
+}

@@ -1,0 +1,80 @@
+body {
+	background-color: #f7dabc;
+	background-image: url("../images/background.avif");
+	background-size: 200%;
+	background-position-x: 30%;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	color: #ff6347;
+	font-family:  sans-serif;
+	font-size: 50px;
+}
+
+h2 {
+	color: #ff6347;
+	margin-left: 50px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h3 {
+	color: #ff6347;
+	margin-left: 50px;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.slika1 {
+	float: right;
+	margin-right: 50px;
+	margin-left: 50px;
+	border-radius: 10px;
+}
+
+p {
+	font-size: 18px;
+	width: auto;
+	margin-left: 50px;
+}
+
+ul, ol {
+	margin-left: 50px;
+}
+
+a {
+	color: #4a90e2;
+	margin: 0px 50px 0px 50px;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+.seznam a {
+	margin: 0;
+	text-decoration-line: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+a:hover {
+	color: limegreen;
+	font-size: 500px;
+}
+
+
+
+.poudarjeno {
+
+	font-weight: bold;
+
+}
+
+.podcrtano {
+
+	text-decoration: underline;
+
+}

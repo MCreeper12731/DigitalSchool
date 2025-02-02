@@ -1,0 +1,27 @@
+.container {
+	width: 50%;
+	background-color: rgba(255, 127, 0, 0.6);
+	margin: 0px auto;
+	padding: 20px 50px;
+	border-radius: 20px;
+}
+
+p {
+	outline: 3px black solid;
+	width: 100%;
+/*	height: 400px;*/
+}
+
+a {
+	outline: 3px magenta solid;
+/*	height: 100px;*/
+	height: 400px;
+	width: 400px;
+}
+
+.side {
+	margin: 8px 0px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}

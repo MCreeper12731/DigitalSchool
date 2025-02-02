@@ -1,0 +1,32 @@
+			/* alt gr + b */
+body {
+	background-color: black;
+	background-image: url("images/nyan_cat.jpg");
+	background-size: 100%;
+	color: white;
+}
+
+h1 {
+	background-color: green;
+	font-family: Courier;
+	color: #dde019;
+	font-size: 20px;
+	text-align: center;
+	/*border-color: black;
+	border-style: solid; /* wavy, dotted, double, dashed
+	border-width: 20px;*/
+	width: 50%;
+	text-decoration-line: line-through;
+	text-decoration-color: blue;
+	text-decoration-style: solid;
+	text-decoration-thickness: 1px;
+}
+ul {
+	list-style-position: inside;
+	list-style-type: circle;
+}
+
+
+img {
+	height: 100px;
+}
