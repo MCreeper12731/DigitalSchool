@@ -169,7 +169,7 @@ Karte igralca: ['zelena 2', 'modra 1', 'rdeca 4', 'rumena 4', 'zelena 1']
 ```
 
 ### 7. Naloga - Veljavne poteze
-Vsako potezo lahko igralec igra katerokoli karto, ki ima enako barvo ali številko (ali oboje). Napišite funkcijo, ki kot paramatere prejme **zadnjo igrano karto** in **igralčeve karte**. Vrne naj **vse veljavne poteze**. *Namig:* `string.split()` *loči besedo po presledkih.* <br>**Primer**
+Vsako potezo lahko igralec igra katerokoli karto, ki ima enako barvo ali številko (ali oboje). Napišite funkcijo, ki kot paramatere prejme **zadnjo igrano karto** in **igralčeve karte**. Vrne naj **vse veljavne poteze**. *Namig:* `string.split()` *loči besedo po presledkih (ali drugih znakih).* <br>**Primer**
 ```python
 poteze1 = veljavne_poteze(zadnja_karta, igralec1)
 poteze2 = veljavne_poteze(zadnja_karta, igralec2)
@@ -179,6 +179,23 @@ print(poteze2)
 ```lua
 ['modra 1']
 ['modra 5', 'modra 4', 'rdeca 3']
+```
+
+### 8. Naloga - Igranje veljavnih kart
+Dopolnite funkcijo `igraj_karto()` iz 6. naloge tako, da igralec lahko igra le veljavne poteze. Program naj napiše, če je igralec igral neveljavno karto. Igralec naj ima tudi na voljo potezo 'kupi', da kupi karto.
+```python
+zadnja_karta = igraj_karto(igralec1)
+print(f"Zadnja igrana karta: {zadnja_karta}")
+print(f"Karte igralca: {igralec1}")
+```
+```lua
+Trenutne karte: ['rumena 2', 'zelena 2', 'modra 1', 'rdeca 4', 'rumena 4', 'zelena 1']
+Vnesi potezo: rumena 2
+Poteza ni veljavna!
+Trenutne karte: ['rumena 2', 'zelena 2', 'modra 1', 'rdeca 4', 'rumena 4', 'zelena 1']
+Vnesi potezo: modra 1
+Zadnja igrana karta: rumena 2
+Karte igralca: ['zelena 2', 'modra 1', 'rdeca 4', 'rumena 4', 'zelena 1']
 ```
 
 ## Rešitve
