@@ -26,6 +26,6 @@
 	- Install *figlet* - a package that creates ascii art from text
 	- Importing packages with
 	```javascript
-	import <packagename> from "packagename"
+	import packagename from "packagename"
 	```
 	- Create and run a simple figlet application
