@@ -11,6 +11,7 @@
 	- Useful shortcuts
 		- CTRL + O - open a folder
 		- CTRL + R - open a recent folder
+		- CTRL + ~ - open terminal window
 		(maybe explain these later, as we go)
 		- CTRL + D - select the next occurence of selected text
 		- ALT + UP/DOWN - move line up/down
